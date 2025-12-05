@@ -1,6 +1,9 @@
 import express from "express";
 import axios from "axios";
 import dotenv from "dotenv";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 dotenv.config();
 const router = express.Router();
@@ -38,3 +41,6 @@ router.post("/create-payment", async (req, res) => {
 });
 
 export default router;
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
